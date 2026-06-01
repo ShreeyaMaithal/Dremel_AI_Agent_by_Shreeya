@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+.idea/
+agents/__pycache__/
+Dremel_Executive_Report.pdf
+trend_chart.png
