@@ -141,7 +141,9 @@ with st.sidebar:
             "What Dremel Should Launch Next",
             "Trend Forecasting",
             "Executive Report",
-            "Raw Data"
+            "Ask Dremel AI",
+            "Raw Data",
+            "About Project"
         ]
     )
 
@@ -1795,3 +1797,356 @@ if page == "Raw Data":
         "trend_scores.csv",
         "text/csv"
     )
+
+## -----------------------------
+# About Page
+# -----------------------------
+
+if page == "About Project":
+
+    st.markdown("""
+    <div style="
+        background: linear-gradient(90deg,#0f4c99,#135cb8);
+        padding:30px;
+        border-radius:15px;
+        color:white;
+        margin-bottom:25px;
+    ">
+        <h1> About This Project</h1>
+        <p style="font-size:20px;">
+        The context, architecture, methodology, and business value of the
+        Dremel AI Trend Intelligence Dashboard.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#172554,#1E3A8A);
+    padding:25px;
+    border-radius:18px;
+    border-left:6px solid #F97316;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">🎯 Why Was This Platform Created?</h2>
+
+    <p style="
+    color:#E5E7EB;
+    font-size:17px;
+    line-height:1.8;
+    ">
+
+    This project was developed as part of the Digital & Social Media Marketing course at
+    <b>IMT Ghaziabad</b>, conducted by
+    <b>Prof. Elena Gasulla Tortajada</b>.
+
+    <br>
+    The objective was to explore how Artificial Intelligence can support modern
+    marketing decision-making by transforming large amounts of digital content into
+    actionable business intelligence.
+
+    For Dremel, consumer interests evolve rapidly across online communities.
+    DIY creators continuously introduce new projects, techniques, and trends.
+    Tracking these developments manually is time-consuming and often reactive.
+
+    This platform was created to help Dremel identify emerging trends,
+    understand consumer interests, discover product opportunities,
+    and generate strategic marketing recommendations using AI.
+
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#7C2D12,#C2410C);
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">📚 Project Objectives</h2>
+
+    <ul style="
+    color:#F8FAFC;
+    font-size:17px;
+    line-height:2;
+    ">
+
+    <li>Monitor UK DIY and maker-community trends.</li>
+    <li>Collect and analyze YouTube creator content.</li>
+    <li>Identify emerging keywords and popular topics.</li>
+    <li>Measure audience sentiment toward DIY trends.</li>
+    <li>Generate AI-driven strategic recommendations.</li>
+    <li>Create an executive-ready dashboard.</li>
+    <li>Demonstrate practical applications of AI in marketing.</li>
+
+    </ul>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#14532D,#166534);
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">🏗️ How Was It Built?</h2>
+
+    <p style="
+    color:#F8FAFC;
+    font-size:17px;
+    line-height:1.8;
+    ">
+
+    The system was built using Python, Streamlit, YouTube Data APIs,
+    Natural Language Processing (NLP), Sentiment Analysis, Machine Learning,
+    and Generative AI.
+
+    The architecture consists of four autonomous AI agents:
+
+    <b>Trend Scout Agent</b> → Collects YouTube trend data.<br>
+    <b>Insight Agent</b> → Performs sentiment and keyword analysis.<br>
+    <b>Strategy Agent</b> → Generates marketing recommendations.<br>
+    <b>Report Agent</b> → Creates executive-ready visual reports.
+
+
+    All outputs are integrated into a live cloud-hosted dashboard.
+
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#1E293B,#0F172A);
+    padding:25px;
+    border-radius:18px;
+    border-left:6px solid #8B5CF6;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">⚙️ How Does It Work?</h2>
+
+    <p style="color:#E5E7EB;font-size:17px;line-height:1.8;">
+
+    The platform follows a multi-agent AI architecture:
+
+    <b>1. Trend Scout Agent</b><br>
+    Collects YouTube trend data, creator content, engagement metrics,
+    and emerging DIY topics.
+    
+    <b>2. Insight Agent</b><br>
+    Performs sentiment analysis, keyword extraction,
+    and identifies audience interests.
+
+    <b>3. Strategy Agent</b><br>
+    Converts trend insights into actionable marketing recommendations,
+    campaign ideas, and product opportunities.
+
+    <b>4. Report Agent</b><br>
+    Creates visualizations, executive reports,
+    and dashboard-ready outputs.
+
+    <br>
+    All agents work together automatically to transform raw content into strategic business intelligence.
+
+    </p>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#164E63,#0F766E);
+    padding:25px;
+    border-radius:18px;
+    border-left:6px solid #2DD4BF;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">🧠 Technologies Used</h2>
+
+    <div style="color:#F8FAFC;font-size:17px;line-height:2;">
+
+    <b>Programming & Analytics</b>
+
+    <ul>
+    <li>Python</li>
+    <li>Pandas</li>
+    <li>NumPy</li>
+    <li>Scikit-Learn</li>
+    </ul>
+
+    <b>Artificial Intelligence</b>
+
+    <ul>
+    <li>Google Gemini AI</li>
+    <li>Natural Language Processing (NLP)</li>
+    <li>VADER Sentiment Analysis</li>
+    <li>Multi-Agent Automation</li>
+    </ul>
+
+    <b>Visualization & Deployment</b>
+
+    <ul>
+    <li>Streamlit</li>
+    <li>Plotly</li>
+    <li>Matplotlib</li>
+    <li>WordCloud</li>
+    <li>GitHub</li>
+    <li>Streamlit Cloud</li>
+    </ul>
+
+    </div>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#7C2D12,#EA580C);
+    padding:25px;
+    border-radius:18px;
+    border-left:6px solid #FDBA74;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">📈 Business Value for Dremel</h2>
+
+    <div style="color:#F8FAFC;font-size:17px;line-height:2;">
+
+    This platform provides measurable value for Dremel by enabling:
+
+    <ul>
+    <li>Early identification of emerging DIY trends.</li>
+    <li>Continuous monitoring of creator communities.</li>
+    <li>Faster marketing decision-making.</li>
+    <li>Data-driven campaign planning.</li>
+    <li>Product innovation opportunities.</li>
+    <li>Audience sentiment tracking.</li>
+    <li>Automated market intelligence reporting.</li>
+    </ul>
+
+    Instead of relying solely on historical research, Dremel can leverage real-time digital signals to guide strategy.
+
+    </div>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
+    <div style="
+    background: linear-gradient(135deg,#312E81,#4338CA);
+    padding:25px;
+    border-radius:18px;
+    border-left:6px solid #A5B4FC;
+    margin-bottom:20px;
+    ">
+
+    <h2 style="color:white;">🎓 Academic Context</h2>
+
+    <div style="
+    color:#F8FAFC;
+    font-size:17px;
+    line-height:2;
+    ">
+
+    <b>Institution:</b> IMT Ghaziabad<br>
+
+    <b>Course:</b> Digital & Social Media Marketing<br>
+
+    <b>Faculty:</b> Prof. Elena Gasulla Tortajada<br>
+
+    <b>Project Title:</b> Dremel AI Trend Intelligence Dashboard<br>
+
+    <b>Developed By:</b> Shreeya Maithal<br>
+
+    <div style="
+    background:rgba(255,255,255,0.15);
+    padding:12px 18px;
+    border-radius:12px;
+    display:inline-block;
+    margin-bottom:12px;
+    ">
+    📧 <b>Email:</b> mshreeya.work@gmail.com
+    </div>
+
+    <br>
+
+    <div style="
+    background:#0A66C2;
+    padding:12px 18px;
+    border-radius:12px;
+    display:inline-block;
+    margin-bottom:20px;
+    ">
+    <a href="https://www.linkedin.com/in/shreeya-maithal/"
+    target="_blank"
+    style="
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    text-decoration:none;
+    ">
+    💼 Connect on LinkedIn
+    </a>
+    </div>
+
+    This project demonstrates how Artificial Intelligence, Digital Marketing, Consumer Insights, and Business Strategy can be integrated into a practical market intelligence solution.
+
+    </div>
+
+    </div>
+    """, unsafe_allow_html=True)
+
+## -----------------------------
+# Ask Dremel AI PAGE
+# -----------------------------
+
+if page == "Ask Dremel AI":
+
+    st.title("🤖 Ask Dremel AI")
+
+    st.markdown(
+        """
+        <span style="
+            background-color:#0047B3;
+            color:white;
+            padding:4px 8px;
+            border-radius:4px;
+            font-size:18px;
+        ">
+        Ask anything about DIY trends, Dremel strategy, or this project
+        </span>
+        """,
+        unsafe_allow_html=True
+    )
+
+    user_question = st.text_input("", label_visibility="collapsed")
+
+    if user_question:
+
+        prompt = f'''
+You are the Dremel AI Business Intelligence Assistant.
+
+Answer the user's question using the context of:
+- UK DIY trends
+- Creator analysis
+- Marketing recommendations
+- Product innovation
+- Sentiment analysis
+
+Question:
+{user_question}
+'''
+
+        response = model.generate_content(prompt)
+
+        st.success(response.text)
